@@ -1,0 +1,149 @@
+*{ /* */ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+header, 
+section h2,
+section h3,
+form button { 
+    font-family: 'Poppins', sans-serif;  /* Fonte para o h1, h2, h3, menu/link e botão */ 
+    font-weight: normal; /* O navegador deu como padrão a fonte o bold e por isso as letras de h1 e h2 estava muito grossas e por isso colocamos normal aqui */ 
+} 
+
+body, input, textarea { 
+    font-family: 'Open Sans', sans-serif; /* Fonte para todo o restante */ 
+} 
+
+header /* Todos esses "títulos" são seletores */ { 
+    padding: 16px 0; /* Um espaçamento interno de 16px e 0 nas laterais */ 
+    background-color: #000000ef; /* Cor de fundo */ 
+    color: #cccccce8; /* Cor do texto no cabeçalho */ 
+} 
+
+header nav li { 
+    display: inline; /* Deixa os logos das marcas de video game um ao lado do outro */ 
+    margin-left: 16px; /* Uma margem entre eles */ 
+    font-size: 18px; /* A fonte do menu/link */ 
+} 
+
+header nav li a { 
+    color: #cccccce8; /* Cor do texto dos links */ 
+    text-decoration: none; 
+} 
+
+.container { 
+    max-width: 1280px; /* Largura maxima 1280px */ 
+    width: 100%; /* Ele vai ocupar 100% da largura até chegar no 1280px */ 
+    margin: 0 auto;/* Para centralizar no topo e na parte de baixo vai ser 0 e nas laterais o auto */ 
+} 
+
+header .container, 
+section .container { 
+    display: flex; /* O titulo do site e o menu lado a lado */ 
+    align-items: center; /* Para centralizar na vertical */ 
+    justify-content: space-between; /* Colocando o menu na extrema direita */ 
+} 
+
+.brands-list img { 
+    height: 24px; /* Faz com que as imagem da lista (logos empresas) fiquem menores */ 
+} 
+
+.social-links img { 
+    height: 24px; /* Tamanho das imagens da lista (instagram, facebook, twitter, linkedin, youtube) */ 
+}
+
+.store-front {
+    max-width: 850px; /* Tamanho da imagem IoT */
+  }
+
+.brands-list li { 
+    display: inline; /* Faz com que os logos fiquem um ao lado do outro */ 
+    margin-right: 8px; 
+} 
+
+section .container { 
+    align-items: flex-start; /* Faz com quem o texto com o título e os logos subam para o topo */ 
+} 
+
+section { 
+    padding: 24px 0; /* Com isso temos um espaçamento entre o topo da imagem e o titulo do texto com o cabeçalho  */ 
+} 
+
+section h2 { 
+    margin-bottom: 16px; /* Dá um espaçamento entre o titulo h2 ao paragrafo */ 
+} 
+
+section { 
+    color:  #000000ef; 
+} 
+
+section p { 
+    margin-bottom: 8px; /* Dá um espaçamento entre o paragrafo e os logos */ 
+} 
+
+.store-front { 
+    margin-right: 32px; /*  Da um espaçamento, dar uma margem a direita da foto */ 
+} 
+
+.social-links li { 
+    display: inline; /* Deixa os logos do formulário um ao lado do outro */ 
+    margin-right: 8px; /* Espaçamento entre os logos */ 
+} 
+
+.social-links li a { 
+    text-decoration: none; /* Limpou a "sujeira" entre os logos do formulário */ 
+} 
+
+#contact .container { 
+    display: block; /* Deixa do mesmo lado */ 
+} 
+
+.contact-methods { 
+    display: flex; /* Separa aos extremos */ 
+    justify-content: space-between; /* Espaçamento entre as subseções de forma igualitaria */ 
+} 
+
+form input, 
+form textarea, 
+form button { 
+    display: block; /* Formulário um abaixo do outro */ 
+    width: 320px; /* Aumenta o tamanho de cada parte do formulário */ 
+    margin-bottom: 8px; /* Um espaço entre eles do formulário */ 
+    padding: 8px; /* Um espaçamento interno */ 
+  } 
+
+form textarea { 
+    resize: none; /* Desabilita poder esticar o textarea */ 
+    height: 180px; /* Altura do textarea */ 
+} 
+
+section h3 { 
+    margin-bottom: 16px; /* Entre o titulo h3 até o conteúdo abaixo */ 
+} 
+
+form button { 
+    background-color: #000000ef; /* Cor de fundo do botão */ 
+    color: #cccccce8; /* Cor da escrita do botão */ 
+    border: none; /* Tirando a borda do botão */ 
+    cursor: pointer; 
+} 
+
+form button:hover { 
+    background-color:  #000000cb; /* Cor do botão ao passar o mouse */
+} 
+
+input:focus, textarea:focus { 
+    outline-color: #182c61; /*  */
+} 
+
+footer { 
+    background-color: #000000ef; /* Cor azul no rodapé */ 
+    color: #cccccce8; /* cor cinza claro quase branco do conteúdo do rodapé*/ 
+    padding: 16px 0; /* Espaçamento do rodapé */ 
+} 
+
+button {
+    font-size: 18px; /* Aumenta a palavra Enviar do botão */
+  }
